@@ -88,7 +88,7 @@ function FormEntry() {
         name: values.name,
         email: values.email,
         phoneNumber: values.phoneNumber,
-        subject: values.phoneNumber,
+        subject: values.subject,
         message: values.message,
       };
 

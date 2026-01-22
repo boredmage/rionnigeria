@@ -2,46 +2,47 @@
   "name": "rionnigeria",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "dependencies": {
     "@contentful/rich-text-plain-text-renderer": "^16.0.7",
     "@contentful/rich-text-react-renderer": "^15.12.1",
+    "@contentful/rich-text-types": "^17.2.5",
     "@highlight-run/react": "^1.2.1",
     "axios": "^1.2.2",
     "contentful": "^9.2.5",
     "formik": "^2.2.9",
     "moment": "^2.29.4",
-    "next": "12.3.1",
+    "next": "14.0.4",
     "nprogress": "^0.2.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18",
+    "react-dom": "^18",
     "react-icons": "^4.4.0",
     "react-loading-skeleton": "^3.1.0",
-    "sass": "^1.55.0",
+    "sass": "^1.97.3",
     "swiper": "^8.4.6"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.26",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1",
+    "eslint-config-next": "14.0.4",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "prettier": "3.0.1",
-    "typescript": "^4.9.4"
+    "typescript": "^5"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "packageManager": "pnpm@10.19.0+sha512.c9fc7236e92adf5c8af42fd5bf1612df99c2ceb62f27047032f4720b33f8eacdde311865e91c411f2774f618d82f320808ecb51718bfa82c060c4ba7c76a32b8"
 }

@@ -7,7 +7,7 @@ import { CardType } from "../types";
 import PageSeo from "../layout/PageSeo";
 import { createClient } from "contentful";
 import moment from "moment";
-import { Block, Inline } from '@contentful/rich-text-types';
+import { Block, Inline } from "@contentful/rich-text-types";
 import { documentToPlainTextString } from "@contentful/rich-text-plain-text-renderer";
 
 interface iEntriesByType {

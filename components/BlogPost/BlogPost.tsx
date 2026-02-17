@@ -48,9 +48,9 @@ export default function BlogPost({ post, author, publishedDate, title, sector })
               <span>Back</span>
             </div>
           </Link>
-          <div>
+          {/* <div>
             <span>{sector}</span>
-          </div>
+          </div> */}
         </div>
         <div className={styles.BlogPostHeader}>
           <h2>{title.toLowerCase()}</h2>
@@ -84,7 +84,7 @@ export default function BlogPost({ post, author, publishedDate, title, sector })
         </div>
         <div className={styles.FlexImageColumn}>
           <div className={styles.FlexImageColumnMain}>{documentToReactComponents(post)}</div>
-          <div className={styles.FlexImageColumnSection}>
+          {/* <div className={styles.FlexImageColumnSection}>
             <h2 className={styles.FlexImageColumnSectionTitle}>Recent News</h2>
             <Card
               type="flex-left-sm"
@@ -107,10 +107,10 @@ export default function BlogPost({ post, author, publishedDate, title, sector })
               <Card className={styles.rCard} title="10 Places you can visit after your hajj" date="Mon, 15th Aug." />
               <Card className={styles.rCard} title="10 Places you can visit after your hajj" date="Mon, 15th Aug." />
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className={styles.BlogPostExtra}>
-          <h2 className={styles.BlogPostExtraTitle}>Posers</h2>
+        {/* <div className={styles.BlogPostExtra}>
+          <h2 className={styles.BlogPostExtraTitle}>More {sector}</h2>
           <GridLayout lgGrid={4}>
             <Card
               imageUrl="/images/dubai-skyline.webp"
@@ -133,7 +133,7 @@ export default function BlogPost({ post, author, publishedDate, title, sector })
               date="Mon, 15th Aug."
             />
           </GridLayout>
-        </div>
+        </div> */}
       </div>
     </>
   );

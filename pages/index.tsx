@@ -46,6 +46,25 @@ export default function Home({ entriesByType }: { entriesByType: iEntriesByType 
         </div>
         <div className={styles.HomeContent}>
           <div className={styles.HomeContentSector}>
+            <h2 className={styles.HomeContentSectorTitle}>Editors Pick</h2>
+            <div className={styles.QnASector}>
+              <div className={styles.QnASectorMain}>
+                {entriesByType["publications"].slice(0, 4).map((entry) => {
+                  return (
+                    <Card
+                      key={entry.fields.slug}
+                      imageUrl={"https:" + entry.fields.thumbnail.fields.file.url}
+                      title={entry.fields.title}
+                      className={styles.CardAbsolute}
+                      date={moment(entry.fields.publishedDate).format("MMM DD, YYYY, HH:mm")}
+                      contentURL={"/publications/" + entry.fields.slug}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <div className={styles.HomeContentSector}>
             <h2 className={styles.HomeContentSectorTitle}>Posers</h2>
             <GridLayout lgGrid={4} mdGrid={1}>
               {entriesByType["poser"].slice(0, 4).map((entry) => {

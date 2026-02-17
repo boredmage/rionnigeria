@@ -126,6 +126,9 @@
     display: flex;
     gap: 3em;
     text-align: left;
+    max-width: 800px;
+    text-align: justify;
+    margin: 0 auto;
 
     &Main {
       width: 70%;
@@ -147,6 +150,10 @@
         b {
           font-weight: 700;
         }
+      }
+
+      a {
+        color: #039341;
       }
 
       blockquote {

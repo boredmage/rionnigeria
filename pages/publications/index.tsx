@@ -1,6 +1,6 @@
-import Component from "../layout/Component/Component";
-import PageSeo from "../layout/PageSeo";
-import styles from "./../styles/publications.module.scss";
+import Component from "../../layout/Component/Component";
+import PageSeo from "../../layout/PageSeo";
+import styles from "./../../styles/publications.module.scss";
 import { MdChevronRight, MdChevronLeft } from "react-icons/md";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,7 +9,7 @@ import { FreeMode, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Button } from "../components/Subscribe/Subscribe";
+import { Button } from "../../components/Subscribe/Subscribe";
 import { useRef } from "react";
 
 export default function Publications() {
